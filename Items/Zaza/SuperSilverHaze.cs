@@ -1,10 +1,9 @@
 ﻿using TeraZaZa.Util;
-
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Zaza;
 
-public class WhiteWidow : ModItem
+public class SuperSilverHaze : ModItem
 {
     public override void SetDefaults()
     {

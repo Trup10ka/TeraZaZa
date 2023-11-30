@@ -1,14 +1,12 @@
 ﻿using TeraZaZa.Util;
-using Terraria;
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Zaza;
 
-public class BlueDream : ModItem
+public class MauiWowie : ModItem
 {
     public override void SetDefaults()
     {
         Item.SetupBasicZaza();
     }
-    
 }

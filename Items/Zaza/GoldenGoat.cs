@@ -1,8 +1,7 @@
 ﻿using TeraZaZa.Util;
-using Terraria;
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Zaza;
 
 public class GoldenGoat : ModItem
 {

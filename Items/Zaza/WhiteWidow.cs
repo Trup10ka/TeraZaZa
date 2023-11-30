@@ -1,10 +1,9 @@
 ﻿using TeraZaZa.Util;
-using Terraria;
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Zaza;
 
-public class MauiWowie : ModItem
+public class WhiteWidow : ModItem
 {
     public override void SetDefaults()
     {

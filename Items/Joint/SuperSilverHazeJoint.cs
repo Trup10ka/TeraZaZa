@@ -1,10 +1,12 @@
-﻿using TeraZaZa.Util;
+﻿using TeraZaZa.Items.Other;
+using TeraZaZa.Items.Zaza;
+using TeraZaZa.Util;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Joint;
 
 public class SuperSilverHazeJoint : ModItem
 {
@@ -12,6 +14,7 @@ public class SuperSilverHazeJoint : ModItem
     {
         Item.SetupBasicJoint();
     }
+    public override bool? UseItem(Player player) => true;
 
     public override void OnConsumeItem(Player player)
     {

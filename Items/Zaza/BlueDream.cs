@@ -1,13 +1,13 @@
 ﻿using TeraZaZa.Util;
-using Terraria;
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items;
+namespace TeraZaZa.Items.Zaza;
 
-public class SuperSilverHaze : ModItem
+public class BlueDream : ModItem
 {
     public override void SetDefaults()
     {
         Item.SetupBasicZaza();
     }
+    
 }
