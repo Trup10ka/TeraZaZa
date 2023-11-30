@@ -1,0 +1,72 @@
+Items: {
+	WhiteWidow: {
+		DisplayName: White Widow
+		Tooltip:
+			'''
+				White Widow improves your mood, gives you energy, and relaxes you all at once. 
+			 	It’s said to help reduce pain and stress, as well as feelings of depression. If you’re feeling fatigued, White Widow might help you stay energized and alert.
+			'''
+	}
+
+	GoldenGoat: {
+		DisplayName: Golden Goat
+		Tooltip:
+			'''
+				Golden Goat is notable for making users feel euphoric and creative. 
+				It’s also great for reducing fatigue and stress while lifting your mood.
+			'''
+	}
+
+	SuperSilverHaze: {
+		DisplayName: Super Silver Haze
+		Tooltip:
+			'''
+				Another energizing strain, Super Silver Haze is said to produce 
+			 	feelings of euphoria, relieves pain and nausea, and lifts your mood. This makes it excellent for stress relief.
+			'''
+	}
+
+	BlueDream: {
+		DisplayName: Blue Dream
+		Tooltip: Blue Dream is a popular strain for treating depression, stress, and chronic pain. It’s also great for beginners, as it’s not too potent.
+	}
+
+	MauiWowie: {
+		DisplayName: Maui Wowie
+		Tooltip:
+			'''
+				Maui Wowie can help you feel super relaxed, yet energetic and creative. 
+			 	It reduces fatigue, too, making it great for days when you need to be productive.
+			'''
+	}
+
+	RollingPaper: {
+		DisplayName: Rolling Paper
+		Tooltip: Rolling Paper is used to craft joints.
+	}
+
+	BlueDreamJoint: {
+		DisplayName: Blue Dream Joint
+		Tooltip: Joint rolled with Blue Dream.
+	}
+
+	WhiteWidowJoint: {
+		DisplayName: White Widow Joint
+		Tooltip: Joint rolled with White Widow.
+	}
+
+	GoldenGoatJoint: {
+		DisplayName: Golden Goat Joint
+		Tooltip: Joint rolled with Golden Goat.
+	}
+
+	SuperSilverHazeJoint: {
+		DisplayName: Super Silver Haze Joint
+		Tooltip: Joint rolled with Super Silver Haze.
+	}
+
+	MauiWowieJoint: {
+		DisplayName: Maui Wowie Joint
+		Tooltip: Joint rolled with Maui Wowie.
+	}
+}
