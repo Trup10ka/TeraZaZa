@@ -16,8 +16,6 @@
 
 - Weed types > drops from various mobs
 - Rolling papers > can be found in chests and caves! (can be crafted too!)
-- Hashish > can be crafted from bigger amounts of weed
-- Bong > can be crafted from glass and iron ingots, can be used to smoke weed, doesn't break!
 
 Using different types of weed will give you different effects!
 
