@@ -1,4 +1,4 @@
-﻿using TeraZaZa.Items.Other;
+﻿using TeraZaZa.Items.Resource;
 using TeraZaZa.Items.Zaza;
 using TeraZaZa.Util;
 using Terraria;

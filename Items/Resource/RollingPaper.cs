@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TeraZaZa.Items.Other;
+namespace TeraZaZa.Items.Resource;
 
 public class RollingPaper : ModItem
 {
