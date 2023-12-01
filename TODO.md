@@ -4,3 +4,4 @@
 - [ ] Add **Grape Crush Gelato** zaza type and joint
 - [ ] Add **Hashish**
 - [ ] Add **Bong**
+- [ ] Add **Plug** NPC

@@ -1,4 +1,4 @@
-﻿# TeraZaza
+﻿# TeraZaZa
 
 > *The more medicated, the more dedicated. - Snoop Dogg*
 
