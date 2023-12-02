@@ -3,8 +3,9 @@ Items: {
 		DisplayName: White Widow
 		Tooltip:
 			'''
-				White Widow improves your mood, gives you energy, and relaxes you all at once. 
-			 	It’s said to help reduce pain and stress, as well as feelings of depression. If you’re feeling fatigued, White Widow might help you stay energized and alert.
+			White Widow is know for a magical burst of energy, like truly magical.
+
+			Mages and Wizards use it to increase their magic power.
 			'''
 	}
 
@@ -12,8 +13,9 @@ Items: {
 		DisplayName: Golden Goat
 		Tooltip:
 			'''
-				Golden Goat is notable for making users feel euphoric and creative. 
-				It’s also great for reducing fatigue and stress while lifting your mood.
+			Golden Goat is know for being a part of the Midas legend.
+
+			They say, when he smoked it, everything he touched turned to gold.
 			'''
 	}
 
@@ -21,22 +23,33 @@ Items: {
 		DisplayName: Super Silver Haze
 		Tooltip:
 			'''
-				Another energizing strain, Super Silver Haze is said to produce 
-			 	feelings of euphoria, relieves pain and nausea, and lifts your mood. This makes it excellent for stress relief.
+			Super Silver Haze is know for its ability to make you feel like you can do anything.
+
+			You can run faster, jump higher and you feel like a flash.
 			'''
 	}
 
 	BlueDream: {
 		DisplayName: Blue Dream
-		Tooltip: Blue Dream is a popular strain for treating depression, stress, and chronic pain. It’s also great for beginners, as it’s not too potent.
+		Tooltip:
+			'''
+			It is being told that when miners where digging for gold, they found a blue flower.
+			The flower was so beautiful that they named it "Blue Dream".
+
+			One time, a miner smoked it and he started to see the ores all around him, 
+			like he could see thru the walls!
+			'''
 	}
 
 	MauiWowie: {
 		DisplayName: Maui Wowie
 		Tooltip:
 			'''
-				Maui Wowie can help you feel super relaxed, yet energetic and creative. 
-			 	It reduces fatigue, too, making it great for days when you need to be productive.
+			There were twins, Maui and Wowie. There is a legend that they brought peace 
+			and prosperity to the world. 
+
+			They were smoking some kind of plant, but no one knows what it was. But it
+			made everyone calm and happy. Nobody wanted to fight anymore.
 			'''
 	}
 
@@ -47,26 +60,51 @@ Items: {
 
 	BlueDreamJoint: {
 		DisplayName: Blue Dream Joint
-		Tooltip: Joint rolled with Blue Dream.
+		Tooltip:
+			'''
+			Joint rolled with Blue Dream.
+
+			Adds Spelunker for 1 minute and half.
+			'''
 	}
 
 	WhiteWidowJoint: {
 		DisplayName: White Widow Joint
-		Tooltip: Joint rolled with White Widow.
+		Tooltip:
+			'''
+			Joint rolled with White Widow.
+					
+			Adds Magic Power for 1 minute and half.
+			'''
 	}
 
 	GoldenGoatJoint: {
 		DisplayName: Golden Goat Joint
-		Tooltip: Joint rolled with Golden Goat.
+		Tooltip:
+			'''
+			Joint rolled with Golden Goat.
+					
+			Adds Weapon Imbue Gold for 1 minute and half.
+			'''
 	}
 
 	SuperSilverHazeJoint: {
 		DisplayName: Super Silver Haze Joint
-		Tooltip: Joint rolled with Super Silver Haze.
+		Tooltip:
+			'''
+			Joint rolled with Super Silver Haze.
+					
+			Adds Swiftness for 1 minute and half.
+			'''
 	}
 
 	MauiWowieJoint: {
 		DisplayName: Maui Wowie Joint
-		Tooltip: Joint rolled with Maui Wowie.
+		Tooltip:
+			'''
+			Joint rolled with Maui Wowie.
+					
+			Adds Calm for 1 minute and half.
+			'''
 	}
 }
