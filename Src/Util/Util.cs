@@ -1,10 +1,14 @@
 ﻿using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 
 namespace TeraZaZa.Util;
 
 public static class Util
 {
+    
+    public static SoundStyle SmokeSound { get; } = new("TeraZaZa/Sounds/SmokeSound", 0);
+    
     public static void SetupBasicZaza(this Item item)
     {
         item.noMelee = true;
@@ -28,7 +32,6 @@ public static class Util
         item.rare = ItemRarityID.Blue;
         item.useStyle = ItemUseStyleID.EatFood;
         item.consumable = true;
-        item.UseSound = SoundID.Grass;
         item.maxStack = 16;
     }
 }
