@@ -1,3 +1,3 @@
-displayName = TeraZaza
+displayName = TeraZaZa
 author = Trup10ka
 version = 0.1
