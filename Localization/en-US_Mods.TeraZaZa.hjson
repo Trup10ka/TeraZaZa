@@ -108,3 +108,11 @@ Items: {
 			'''
 	}
 }
+
+Tiles: {
+	WhiteWidowCannabis: {
+		DisplayName: White Widow Cannabis
+		Tooltip: Plant of White Widow.
+		MapEntry: White Widow Cannabis
+	}
+}
