@@ -26,10 +26,10 @@ public class SuperSilverHazeJoint : ModItem
 
     public override void AddRecipes()
     {
-        var superSilver = CreateRecipe();
-        superSilver.AddIngredient(ItemType<SuperSilverHaze>(), 2);
-        superSilver.AddIngredient(ItemType<RollingPaper>());
-        superSilver.AddTile(TileID.WorkBenches);
-        superSilver.Register();
+        CreateRecipe()
+            .AddIngredient(ItemType<SuperSilverHaze>(), 2)
+            .AddIngredient(ItemType<RollingPaper>())
+            .AddTile(TileID.WorkBenches)
+            .Register();
     }
 }

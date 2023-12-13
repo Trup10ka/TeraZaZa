@@ -27,10 +27,10 @@ public class WhiteWidowJoint : ModItem
 
     public override void AddRecipes()
     {
-        var whiteWidow = CreateRecipe();
-        whiteWidow.AddIngredient(ItemType<WhiteWidow>(), 2);
-        whiteWidow.AddIngredient(ItemType<RollingPaper>());
-        whiteWidow.AddTile(TileID.WorkBenches);
-        whiteWidow.Register();
+        CreateRecipe()
+            .AddIngredient(ItemType<WhiteWidow>(), 2)
+            .AddIngredient(ItemType<RollingPaper>())
+            .AddTile(TileID.WorkBenches)
+            .Register();
     }
 }
