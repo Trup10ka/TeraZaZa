@@ -20,23 +20,27 @@ public class CannabisGenPass : GenPass
         var maxToSpawn = (int) (Main.maxTilesX * Main.maxTilesY * 0.004);
         for (var i = 0; i < maxToSpawn; i++)
         {
-            var x = WorldGen.genRand.Next(100, Main.maxTilesX - 100);
-            var y = WorldGen.genRand.Next((int) Main.worldSurface - 300, Main.maxTilesY - 900);
-
-            var tile = Framing.GetTileSafely(x, y);
-
-            if (!IsNotUnderGround(x, y)) continue;
-            switch (tile.TileType)
-            {
-                case TileID.Grass: WorldGen.PlaceTile(x, y - 1, TileType<WhiteWidowCannabis>());
-                    break;
-                case TileID.CorruptGrass: WorldGen.PlaceTile(x, y - 1, TileType<WhiteWidowCannabis>());
-                    break;
-                case TileID.SnowBlock: WorldGen.PlaceTile(x, y - 1, TileType<WhiteWidowCannabis>());
-                    break;
-            }
+            TryToPlaceCannabis();
         }
     }
+
+    private static void TryToPlaceCannabis()
+    {
+        var x = WorldGen.genRand.Next(100, Main.maxTilesX - 100);
+        var y = WorldGen.genRand.Next((int) Main.worldSurface - 300, Main.maxTilesY - 900);
+
+        var tile = Framing.GetTileSafely(x, y);
+
+        if (!IsNotUnderGround(x, y)) return;
+        switch (tile.TileType)
+        {
+            case TileID.Grass: WorldGen.PlaceTile(x, y - 1, TileType<WhiteWidowCannabis>());
+                break;
+            case TileID.CorruptGrass: WorldGen.PlaceTile(x, y - 1, TileType<MauiWowieCannabis>());
+                break;
+        }
+    }
+    
     private static bool IsNotUnderGround(int x, int y)
     {
         var leftTop = Framing.GetTileSafely(x - 1, y - 1);
