@@ -11,13 +11,13 @@ public static class Util
     
     public static void SetupBasicZaza(this Item item)
     {
-        item.noMelee = true;
-        item.width = 40;
-        item.height = 40;
+        item.width = 20;
+        item.height = 20;
         item.useTime = 10;
         item.useAnimation = 10;
         item.rare = ItemRarityID.Green;
         item.UseSound = SoundID.Dig;
+        item.useStyle = ItemUseStyleID.Swing;
         item.maxStack = 60;
     }
     
