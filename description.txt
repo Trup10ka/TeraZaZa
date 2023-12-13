@@ -4,6 +4,35 @@ Tired of being baked in real life? Now you can bake yourself even in your favour
 
 TeraZaza brings in several types of Za, different kinds of rolling papers and even Hashish!
 
-- Weed types > drops from various mobs
-- Rolling papers > can be found in chests and caves! (can be crafted too!)
-- Hashish > drops from zombies!
+WEED
+----
+- can grow in bioms where grass can grow
+- can be found in chests and caves
+- drops from enemies
+
+Different types of Za can be for instance found only in caves, others only in chests or can be only dropped from enemies.
+
+
+HASHISH
+-------
+- can be crafted from 5 Weed pieces (of the same kind) on a Rolling Table
+- can be used to craft Hashish Joints
+- Hashish has much stronger effects than ordinary Weed, but can have some consequences if used too much
+
+
+ROLLING PAPERS
+--------------
+- can be crafted from paper on a new station called Rolling Table
+- can also be dropped from enemies
+
+Without a rolling paper, you can't roll a joint
+
+
+ROLLING TABLE
+-------------
+- can be crafted from 6 wood and 2 stones
+- can be used to craft rolling papers
+- can be used to craft Hashish
+- can be used to craft Joints
+
+Rolling table will be a basic must-have station for every stoner. Without this you ain't gonna bake yourself.
