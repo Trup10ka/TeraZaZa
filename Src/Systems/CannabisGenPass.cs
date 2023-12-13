@@ -1,4 +1,5 @@
 ﻿using TeraZaZa.Tile;
+using TeraZaZa.Tile.Cannabis;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
