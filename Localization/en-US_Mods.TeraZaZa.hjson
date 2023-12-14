@@ -107,10 +107,10 @@ Items: {
 			Adds Calm for 1 minute and half.
 			'''
 	}
-	
+
 	StoneMortar: {
 		DisplayName: Stone Mortar
-		Tooltip: 
+		Tooltip:
 			'''
 			Can be placed on a table and used to craft joints and hashish
 			There is even a small chance that your Zaza wont be consumed !
@@ -124,34 +124,34 @@ Tiles: {
 		Tooltip: Plant of White Widow.
 		MapEntry: White Widow Cannabis
 	}
-	
+
 	GoldenGoatCannabis: {
 		DisplayName: Golden Goat Cannabis
 		Tooltip: Plant of Golden Goat.
 		MapEntry: Golden Goat Cannabis
 	}
-	
+
 	SuperSilverHazeCannabis: {
 		DisplayName: Super Silver Haze Cannabis
 		Tooltip: Plant of Super Silver Haze.
 		MapEntry: Super Silver Haze Cannabis
 	}
-	
+
 	BlueDreamCannabis: {
 		DisplayName: Blue Dream Cannabis
 		Tooltip: Plant of Blue Dream.
 		MapEntry: Blue Dream Cannabis
 	}
-	
+
 	MauiWowieCannabis: {
 		DisplayName: Maui Wowie Cannabis
 		Tooltip: Plant of Maui Wowie.
 		MapEntry: Maui Wowie Cannabis
 	}
-	
+
 	StoneMortar: {
 		DisplayName: Stone Mortar
-		Tooltip: 
+		Tooltip:
 			'''
 			Can be placed on a table and used to craft joints and hashish
 			There is even a small chance that your Zaza wont be consumed !
