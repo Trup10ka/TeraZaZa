@@ -23,8 +23,6 @@ public class StoneMortar : ModItem
         Item.createTile = TileType<Tile.Other.StoneMortar>();
     }
 
-    public override bool? UseItem(Player player) => true;
-
     public override void AddRecipes()
     {
         CreateRecipe()

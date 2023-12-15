@@ -31,18 +31,13 @@ public class BlueDreamJoint : ModItem
         CreateRecipe()
             .AddIngredient(ItemType<BlueDream>(), 2)
             .AddIngredient(ItemType<RollingPaper>())
-            .Register();
-
-        CreateRecipe()
-            .AddIngredient(ItemType<BlueDream>(), 2)
-            .AddIngredient(ItemType<RollingPaper>())
             .AddConsumeItemCallback(
                 (Recipe _, int type, ref int amount) =>
                 {
-                    if (type == ItemType<BlueDream>() && ShouldConsumeItem(.35f))
+                    Main.LocalPlayer.adjTile[TileType<StoneMortar>()] = true;
+                    if (Main.LocalPlayer.adjTile[TileType<StoneMortar>()] && type == ItemType<BlueDream>() && ShouldConsumeItem(.35f))
                         amount--;
                 })
-            .AddTile<StoneMortar>()
             .Register();
     }
 }
