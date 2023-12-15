@@ -14,5 +14,6 @@ public class RollingPaper : ModItem
         Item.useTime = 10;
         Item.useAnimation = 10;
         Item.rare = ItemRarityID.Green;
+        Item.maxStack = 999;
     }
 }
