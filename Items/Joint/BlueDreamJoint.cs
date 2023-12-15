@@ -1,5 +1,7 @@
-﻿using TeraZaZa.Items.Resource;
+﻿using System;
+using TeraZaZa.Items.Resource;
 using TeraZaZa.Items.Zaza;
+using TeraZaZa.Tile.Other;
 using TeraZaZa.Util;
 using Terraria;
 using Terraria.Audio;
@@ -29,7 +31,18 @@ public class BlueDreamJoint : ModItem
         CreateRecipe()
             .AddIngredient(ItemType<BlueDream>(), 2)
             .AddIngredient(ItemType<RollingPaper>())
-            .AddTile(TileID.WorkBenches)
+            .Register();
+
+        CreateRecipe()
+            .AddIngredient(ItemType<BlueDream>(), 2)
+            .AddIngredient(ItemType<RollingPaper>())
+            .AddConsumeItemCallback(
+                (Recipe _, int type, ref int amount) =>
+                {
+                    if (type == ItemType<BlueDream>() && ShouldConsumeItem(.35f))
+                        amount--;
+                })
+            .AddTile<StoneMortar>()
             .Register();
     }
 }

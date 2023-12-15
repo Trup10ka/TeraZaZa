@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using System;
+using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 
@@ -6,7 +7,7 @@ namespace TeraZaZa.Util;
 
 public static class Util
 {
-    
+    private static Random _random = new ();
     public static SoundStyle SmokeSound { get; } = new("TeraZaZa/Sounds/SmokeSound", 0);
     
     public static void SetupBasicZaza(this Item item)
@@ -33,5 +34,12 @@ public static class Util
         item.useStyle = ItemUseStyleID.EatFood;
         item.consumable = true;
         item.maxStack = 16;
+    }
+    public static bool ShouldConsumeItem(float chance)
+    {
+        if (chance is < 0 or > 1)
+            throw new ArgumentOutOfRangeException(nameof(chance), "Internal Mod Error: Chance must be between 0 and 1, report this to the creator of the mod!");
+        var random = _random.NextSingle();
+        return chance > random;
     }
 }
