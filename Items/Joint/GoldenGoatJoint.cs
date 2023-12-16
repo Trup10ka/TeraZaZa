@@ -1,5 +1,6 @@
 ﻿using TeraZaZa.Items.Resource;
 using TeraZaZa.Items.Zaza;
+using TeraZaZa.Tile.Other;
 using TeraZaZa.Util;
 using Terraria;
 using Terraria.Audio;
@@ -29,7 +30,16 @@ public class GoldenGoatJoint : ModItem
         CreateRecipe()
             .AddIngredient(ItemType<GoldenGoat>(), 2)
             .AddIngredient(ItemType<RollingPaper>())
-            .AddTile(TileID.WorkBenches)
+            .AddConsumeItemCallback(
+                (Recipe _, int type, ref int amount) =>
+                {
+                    if (
+                        Main.LocalPlayer.adjTile[TileType<StoneMortar>()] && 
+                        type == ItemType<GoldenGoat>() && 
+                        ShouldConsumeItem(.35f)
+                    ) 
+                        amount--;
+                })
             .Register();
     }
 }

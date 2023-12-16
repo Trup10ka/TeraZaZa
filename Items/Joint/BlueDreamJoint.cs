@@ -34,8 +34,11 @@ public class BlueDreamJoint : ModItem
             .AddConsumeItemCallback(
                 (Recipe _, int type, ref int amount) =>
                 {
-                    Main.LocalPlayer.adjTile[TileType<StoneMortar>()] = true;
-                    if (Main.LocalPlayer.adjTile[TileType<StoneMortar>()] && type == ItemType<BlueDream>() && ShouldConsumeItem(.35f))
+                    if (
+                        Main.LocalPlayer.adjTile[TileType<StoneMortar>()] && 
+                        type == ItemType<BlueDream>() && 
+                        ShouldConsumeItem(.35f)
+                        ) 
                         amount--;
                 })
             .Register();
