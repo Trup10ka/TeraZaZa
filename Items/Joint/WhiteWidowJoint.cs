@@ -21,7 +21,6 @@ public class WhiteWidowJoint : ModItem
 
     public override void OnConsumeItem(Player player)
     {
-        player.AddBuff(BuffID.Hunger, 600);
         player.AddBuff(BuffID.MagicPower, 5400);
         SoundEngine.PlaySound(SmokeSound.WithVolumeScale(5f).WithPitchOffset(.3f), player.position);
     }
