@@ -7,7 +7,7 @@ namespace TeraZaZa.Util;
 
 public static class Util
 {
-    private static Random _random = new ();
+    private static readonly Random Random = new ();
     public static SoundStyle SmokeSound { get; } = new("TeraZaZa/Sounds/SmokeSound", 0);
     
     public static void SetupBasicZaza(this Item item)
@@ -22,7 +22,6 @@ public static class Util
         item.maxStack = 60;
     }
     
-
     public static void SetupBasicJoint(this Item item)
     {
         item.noMelee = true;
@@ -39,7 +38,7 @@ public static class Util
     {
         if (chance is < 0 or > 1)
             throw new ArgumentOutOfRangeException(nameof(chance), "Internal Mod Error: Chance must be between 0 and 1, report this to the creator of the mod!");
-        var random = _random.NextSingle();
+        var random = Random.NextSingle();
         return chance > random;
     }
 }

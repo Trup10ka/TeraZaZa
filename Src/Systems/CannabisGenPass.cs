@@ -1,5 +1,4 @@
-﻿using TeraZaZa.Tile;
-using TeraZaZa.Tile.Cannabis;
+﻿using TeraZaZa.Tile.Cannabis;
 using Terraria;
 using Terraria.ID;
 using Terraria.IO;
@@ -20,9 +19,7 @@ public class CannabisGenPass : GenPass
 
         var maxToSpawn = (int) (Main.maxTilesX * Main.maxTilesY * 0.004);
         for (var i = 0; i < maxToSpawn; i++)
-        {
             TryToPlaceCannabis();
-        }
     }
 
     private static void TryToPlaceCannabis()
@@ -35,7 +32,7 @@ public class CannabisGenPass : GenPass
         if (!IsNotUnderGround(x, y)) return;
         switch (tile.TileType)
         {
-            case TileID.Grass: WorldGen.PlaceTile(x, y - 1, TileType<WhiteWidowCannabis>());
+            case TileID.Grass: WorldGen.PlaceTile(x, y - 1, TileType<SuperSilverHazeCannabis>());
                 break;
             case TileID.CorruptGrass: WorldGen.PlaceTile(x, y - 1, TileType<MauiWowieCannabis>());
                 break;
