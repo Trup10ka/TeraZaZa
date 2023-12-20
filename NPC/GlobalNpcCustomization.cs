@@ -32,6 +32,11 @@ public class GlobalNpcCustomization : GlobalNPC
             Zombie or 
             BigZombie or 
             SnowFlinx or 
-            FemaleZombie;
+            FemaleZombie or
+            ZombieElf or 
+            ZombieSuperman or
+            MaggotZombie or
+            SwampZombie or
+            ZombieDoctor;
     }
 }
