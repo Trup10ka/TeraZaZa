@@ -3,7 +3,6 @@ using TeraZaZa.Content.Items.Zaza;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.ObjectData;
 using static Terraria.ModLoader.ModContent;
 
 
