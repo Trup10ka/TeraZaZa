@@ -27,8 +27,10 @@ public class SystemCustomization : ModSystem
         for (var chestIndex = 0; chestIndex < Main.maxChests; chestIndex++)
         {
             var currentChest = Main.chest[chestIndex];
-            if (currentChest == null || !CheckIfChestUnderTheSurface(currentChest)) continue;
-            if (WorldGen.genRand.NextBool(3)) continue;
+            if (
+                currentChest == null || 
+                !CheckIfChestUnderTheSurface(currentChest) ||
+                WorldGen.genRand.NextBool(3)) continue;
 
             InsertItemsInChest(currentChest, itemsToBeInsertedInChest, ref currentItemPointer);
         }
@@ -37,18 +39,19 @@ public class SystemCustomization : ModSystem
     private static void InsertItemsInChest(Chest chest, IReadOnlyList<int> itemsToBeInserted, ref int currentItemPointer)
     {
         var itemsInsertedInCurrentChest = 0;
+        
         for (var itemIndex = 0; itemIndex < 40; itemIndex++)
         {
             if (chest.item[itemIndex].type != ItemID.None) continue;
+            if (itemsInsertedInCurrentChest >= 5) break;
                 
             var itemStack = WorldGen.genRand.Next(2, 5);
+            
             chest.item[itemIndex].SetDefaults(itemsToBeInserted[currentItemPointer]);
             chest.item[itemIndex].stack = itemStack;
                 
             itemsInsertedInCurrentChest += itemStack;
             currentItemPointer = (currentItemPointer + 1) % itemsToBeInserted.Count;
-
-            if (itemsInsertedInCurrentChest >= 5) break;
         }
     }
 
