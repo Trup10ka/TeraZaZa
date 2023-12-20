@@ -19,6 +19,6 @@ public class BlueDreamCannabis : ModTile
         AddMapEntry(new Color( 34, 123, 255), CreateMapEntryName());
 
         DustType = DustID.BlueMoss;
-        RegisterItemDrop(ItemType<WhiteWidow>());
+        RegisterItemDrop(ItemType<BlueDream>());
     }
 }

@@ -18,6 +18,6 @@ public class SuperSilverHazeCannabis : ModTile
         AddMapEntry(new Color( 244, 246, 206), CreateMapEntryName());
 
         DustType = DustID.BubbleBurst_Blue;
-        RegisterItemDrop(ItemType<WhiteWidow>());
+        RegisterItemDrop(ItemType<SuperSilverHaze>());
     }
 }

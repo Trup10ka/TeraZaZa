@@ -19,6 +19,6 @@ public class GoldenGoatCannabis : ModTile
         AddMapEntry(new Color( 204, 209, 24), CreateMapEntryName());
 
         DustType = DustID.BubbleBurst_Blue;
-        RegisterItemDrop(ItemType<WhiteWidow>());
+        RegisterItemDrop(ItemType<GoldenGoat>());
     }
 }
