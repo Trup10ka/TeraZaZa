@@ -1,8 +1,6 @@
 ﻿using TeraZaZa.Items.Zaza;
 using Terraria.GameContent.ItemDropRules;
-using Terraria.ID;
 using Terraria.ModLoader;
-
 using static Terraria.ModLoader.ModContent;
 using static Terraria.ID.NPCID;
 

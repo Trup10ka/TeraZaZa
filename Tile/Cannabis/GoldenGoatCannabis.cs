@@ -6,7 +6,6 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using static Terraria.ModLoader.ModContent;
 
-
 namespace TeraZaZa.Tile.Cannabis;
 
 public class GoldenGoatCannabis : ModTile
