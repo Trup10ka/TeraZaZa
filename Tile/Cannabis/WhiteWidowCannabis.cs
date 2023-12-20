@@ -3,6 +3,7 @@ using TeraZaZa.Items.Zaza;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ObjectData;
 using static Terraria.ModLoader.ModContent;
 
 namespace TeraZaZa.Tile.Cannabis;
@@ -15,7 +16,10 @@ public class WhiteWidowCannabis : ModTile
         Main.tileMergeDirt[Type] = false;
         Main.tileBlockLight[Type] = true;
         
-        AddMapEntry(new Color(255, 0, 255), CreateMapEntryName());
+        TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2);
+        TileObjectData.addTile(Type);
+        
+        AddMapEntry(new Color( 237, 237, 236), CreateMapEntryName());
 
         DustType = DustID.BubbleBurst_Blue;
         RegisterItemDrop(ItemType<WhiteWidow>());
