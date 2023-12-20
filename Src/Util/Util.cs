@@ -19,7 +19,7 @@ public static class Util
         item.rare = ItemRarityID.Green;
         item.UseSound = SoundID.Dig;
         item.useStyle = ItemUseStyleID.Swing;
-        item.maxStack = 60;
+        item.maxStack = 999;
     }
     
     public static void SetupBasicJoint(this Item item)
@@ -27,12 +27,12 @@ public static class Util
         item.noMelee = true;
         item.width = 40;
         item.height = 40;
-        item.useTime = 10;
-        item.useAnimation = 10;
+        item.useTime = 25;
+        item.useAnimation = 25;
         item.rare = ItemRarityID.Blue;
         item.useStyle = ItemUseStyleID.EatFood;
         item.consumable = true;
-        item.maxStack = 16;
+        item.maxStack = 60;
     }
     public static bool ShouldConsumeItem(float chance)
     {
