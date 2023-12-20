@@ -29,7 +29,7 @@ public class CannabisGenPass : Terraria.WorldBuilding.GenPass
 
         var tile = Framing.GetTileSafely(x, y);
 
-        if (!IsNotUnderGround(x, y)) return;
+        if (!IsNotUnderGround(x, y) || tile.IsHalfBlock || tile.Slope != SlopeType.Solid) return;
         switch (tile.TileType)
         {
             case TileID.Grass: WorldGen.PlaceTile(x, y - 1, TileType<SuperSilverHazeCannabis>());
