@@ -25,7 +25,7 @@ public class CannabisGenPass : GenPass
     private static void TryToPlaceCannabis()
     {
         var x = WorldGen.genRand.Next(100, Main.maxTilesX - 100);
-        var y = WorldGen.genRand.Next((int) Main.worldSurface - 300, Main.maxTilesY - 900);
+        var y = WorldGen.genRand.Next((int) (Main.worldSurface * 0.35), (int) Main.worldSurface);
 
         var tile = Framing.GetTileSafely(x, y);
 
