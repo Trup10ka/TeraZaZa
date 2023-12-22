@@ -8,7 +8,7 @@ namespace TeraZaZa.Common.Util;
 public static class Util
 {
     private static readonly Random Random = new ();
-    public static SoundStyle SmokeSound { get; } = new("TeraZaZa/Sounds/SmokeSound", 0);
+    public static SoundStyle SmokeSound { get; } = new("TeraZaZa/Content/Sounds/SmokeSound", 0);
     
     public static void SetupBasicZaza(this Item item)
     {
